@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Nunito&family=Signika+Negative:wght@500&family=Ubuntu:wght@500&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.password-container{
+    background-color: rgba(0,0,0,0.1);
+    width: 500px;
+    padding: 20px;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.input-container{
+    border: solid 1px rgb(0,0,0);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input{
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.copy{
+    cursor: pointer;
+    padding: 7px 13px;
+    font-weight: bold;
+    background: orangered;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.copy:hover{
+    background-color: green;
+}
+
+.btn{
+    background-color: orangered;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: green;
+}
+.btn:active{
+    transform: scale(0.95);
+}
+.alert-container{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: lightcoral;
+    right: 50%;
+    transform: translateX(140px);
+    bottom: -200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.active{
+    bottom: 50px;
+}
